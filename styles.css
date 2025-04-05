@@ -5,11 +5,16 @@ body {
     background-color: #fdfaf6;
     color: #333;
 }
-header, footer {
+footer {
     background-color: #43281c;
-    color: #fff;
     padding: 20px;
     text-align: center;
+}
+nav{
+    background-color: #43281c;
+}
+.navbar-brand, .nav-link{
+    color: white;
 }
 .container {
     width: 90%;
@@ -18,33 +23,46 @@ header, footer {
     padding: 40px 0;
 }
 .hero {
-    text-align: center;
-    padding: 60px 20px;
+    /*background-image: url('hero-bg.jpg'); /* Replace with an actual image */
+    background-size: cover;
+    background-position: center;
     background-color: #e6d8c9;
+    color: #333;
 }
 .hero h1 {
     font-size: 48px;
 }
-.products {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 40px;
+
+/* Products Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.product-card {
-    background-color: #fff;
-    flex: 1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
     text-align: center;
-    min-width: 250px;
 }
-.product-card img {
-    max-width: 100%;
-    border-radius: 4px;
-    height: auto;
+
+/* Contact Section */
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control {
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
 }
 .cta-btn {
     display: inline-block;
