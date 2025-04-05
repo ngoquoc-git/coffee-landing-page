@@ -39,10 +39,12 @@ header, footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    min-width: 250px;
 }
 .product-card img {
     max-width: 100%;
     border-radius: 4px;
+    height: auto;
 }
 .cta-btn {
     display: inline-block;
@@ -54,7 +56,11 @@ header, footer {
     border-radius: 4px;
 }
 @media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
     .products {
         flex-direction: column;
+        align-items: center;
     }
 }
